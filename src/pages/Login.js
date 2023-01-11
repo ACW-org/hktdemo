@@ -41,7 +41,7 @@ const LoginPage = () => {
       .catch((err) => console.log(err));
   };
   return (
-    <div className="container mx-auto w-full flex flex-col items-center">
+    <div className="container mx-auto w-[60%] lg:w-full flex flex-col items-center">
       {loading ? (
         <div className="pt-10">
           <Circles height="80" width="80" radius="9" color="green" ariaLabel="loading" wrapperStyle wrapperClass />

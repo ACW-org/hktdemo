@@ -13,7 +13,7 @@ import Paper from "@mui/material/Paper";
 const SpendingTab = ({ currentLoading, spendings }) => {
   const user = JSON.parse(localStorage.getItem("user"));
   return (
-    <div className="w-full pt-20">
+    <div className="w-full pt-10">
       <h2 className="text-center">Spending for {user.firstname}</h2>
       {currentLoading ? (
         <div className="justify-center align-center items-center">
@@ -55,7 +55,7 @@ const SpendingTab = ({ currentLoading, spendings }) => {
 const PointsTab = ({ currentLoading, points }) => {
   const user = JSON.parse(localStorage.getItem("user"));
   return (
-    <div className="w-full pt-20">
+    <div className="w-full pt-10">
       <h2 className="text-center">Points of {user.firstname}</h2>
       {currentLoading ? (
         <div className="justify-center align-center items-center">
@@ -179,11 +179,11 @@ const History = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="flex flex-row justify-around items-center border-b-2 border-grey">
-        <button className="hover:bg-blue-400" onClick={(e) => getSpending(e)}>
+      <div className="flex flex-row py-10 justify-around items-center border-b-2 border-grey">
+        <button className="cursor:pointer" onClick={(e) => getSpending(e)}>
           Spendings
         </button>
-        <button className="hover:bg-blue-400" onClick={(e) => getPoints(e)}>
+        <button className="cursor:pointer" onClick={(e) => getPoints(e)}>
           Points
         </button>
       </div>

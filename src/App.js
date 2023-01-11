@@ -12,7 +12,7 @@ import PrivateRoutes from "./component/Protected";
 import CreatePage from "./pages/Create";
 function App() {
   return (
-    <div>
+    <div className="container mx-auto">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
