@@ -16,7 +16,7 @@ const VoucherList = () => {
       case "2":
         return "Active";
       case "3":
-        return "Uesd";
+        return "Used";
       case "4":
         return "Expired";
       case "5":
@@ -91,7 +91,7 @@ const VoucherList = () => {
       recordtype: "customrecord_acws_voucher",
       id: row[0].original.id,
       name: row[0].original.voucherno,
-      custrecord_acws_voucher_txstatus: "2",
+      custrecord_acws_voucher_txstatus: "3",
     };
     await axios
       .put(proxy + url, JSON.stringify(putObj))
