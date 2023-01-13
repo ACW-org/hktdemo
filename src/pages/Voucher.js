@@ -105,9 +105,11 @@ const VoucherList = () => {
   }, []);
 
   return (
-    <div className="pt-10 flex flex-col items-center">
+    <>
       {loading ? (
-        <Circles height="80" width="80" radius="9" color="green" ariaLabel="loading" wrapperStyle wrapperClass />
+        <div className="pt-10 flex flex-col items-center">
+          <Circles height="80" width="80" radius="9" color="green" ariaLabel="loading" wrapperStyle wrapperClass />
+        </div>
       ) : (
         <MaterialReactTable
           columns={columns}
@@ -135,7 +137,7 @@ const VoucherList = () => {
           )}
         />
       )}
-    </div>
+    </>
   );
 };
 
