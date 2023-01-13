@@ -9,7 +9,7 @@ const Profile = () => {
     setUser(JSON.parse(localStorage.getItem("user")));
   }, []);
   return (
-    <div className="flex container items-center mx-auto w-full px-6 py-4 mt-6 justify-center bg-white shadow-md sm:max-w-md sm:rounded-lg">
+    <div className="flex items-center mx-auto w-full px-6 py-4 mt-6 justify-center bg-white shadow-md sm:max-w-md sm:rounded-lg">
       <form className="w-full">
         <div>
           <label htmlFor="firstname" className=" text-sm font-medium text-gray-700 undefined">
