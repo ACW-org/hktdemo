@@ -47,7 +47,7 @@ const LoginPage = () => {
           <Circles height="80" width="80" radius="9" color="green" ariaLabel="loading" wrapperStyle wrapperClass />
         </div>
       ) : (
-        <form className="form w-full lg:w-[[60%]" style={{ display: "flex", flexDirection: "column" }} onSubmit={handleOnSubmit}>
+        <form className="form w-full lg:w-[60%]" style={{ display: "flex", flexDirection: "column" }} onSubmit={handleOnSubmit}>
           <TextField style={{ paddingTop: "1rem", paddingBottom: "1rem" }} id="username" type="text" />
           <TextField style={{ paddingTop: "1rem", paddingBottom: "1rem" }} id="password" type="password" />
           <Button type="submit" color="primary" className="form__custom-button">
